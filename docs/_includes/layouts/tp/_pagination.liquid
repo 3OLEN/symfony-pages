@@ -1,0 +1,13 @@
+<nav class="tp-pagination">
+    <ol class="pagination-list">
+        {% comment %}---- Gestion de l'index ----{% endcomment %}
+        {% assign index_tp_page = site[page.collection] | where: "slug", "" | first %}
+        {% include layouts/tp/pagination/_item.liquid item_page=index_tp_page index=true %}
+
+        {% comment %}---- Gestion des autres pages ----{% endcomment %}
+        {% assign tp_pages = site[page.collection] | where_exp: "tp_page", "tp_page.page != null" %}
+        {% for tp_page in tp_pages %}
+            {% include layouts/tp/pagination/_item.liquid item_page=tp_page %}
+        {% endfor %}
+    </ol>
+</nav>

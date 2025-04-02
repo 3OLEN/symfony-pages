@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: linked_pages/tp
 title: "TP1 - Prise en main"
+slug: ''
 ---
 
 ## 📜 Sujet
