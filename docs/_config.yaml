@@ -2,3 +2,8 @@ theme: minima
 title: Symfony
 description: Informations et ressources sur le module "Symfony" des 3OLEN de l'école ORT LYON.
 timezone: Europe/Paris
+
+collections:
+  tp-1:
+    output: true
+    permalink: /:collection/:slug
