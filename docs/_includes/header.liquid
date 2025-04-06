@@ -20,6 +20,14 @@
                 <a class="page-link" href="{{ tp1_page.url | relative_url }}">
                     {{ tp1_page.title }}
                 </a>
+
+                {% assign presentations_page = site.html_pages
+                        | where_exp: "item", "item.name == 'presentations.md'"
+                        | first
+                %}
+                <a class="page-link" href="{{ presentations_page.url | relative_url }}">
+                    {{ presentations_page.title }}
+                </a>
             </div>
         </nav>
         {%- endif -%}
