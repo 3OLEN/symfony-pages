@@ -1,0 +1,18 @@
+<ol class="presentations-subjects">
+    {% for subject in include.subjects %}
+        {% assign roaster_size = subject.roaster | size %}
+
+        <li>
+            <div class="subject{% if roaster_size > 0 %} has_roaster{% endif %}">
+                <div class="title">{{ subject.title | markdownify }}</div>
+                {% if roaster_size > 0 %}
+                    <div class="roaster">
+                        {% for student in subject.roaster %}
+                            <span>{{ student }}</span>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+            </div>
+        </li>
+    {% endfor %}
+</ol>
