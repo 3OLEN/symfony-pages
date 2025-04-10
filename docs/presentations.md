@@ -2,6 +2,40 @@
 layout: page
 title: Exposés
 permalink: '/exposes'
+
+subjects:
+- title: Créer un `Validator` custom
+  roaster:
+  - Loris
+- title: Créer un champ de formulaire `FormType` réutilisable
+  roaster:
+  - Angel
+  - Julien
+- title: Utilisation des « flash messages »
+  roaster:
+  - David
+  - Érick
+- title: Créer un `Voter` custom
+  roaster:
+- title: Créer une « commande » custom
+  roaster:
+  - Marine
+  - Rachel
+- title: Valider le contenu d'un tableau avec l'`OptionsResolver`
+  roaster:
+  - Mamoune
+  - Eddy
+- title: Convertir un tableau en objet avec le `Serializer`
+  roaster:
+  - Romain
+  - Benjamin
+- title: Effectuer un appel HTTP vers un service externe avec le `HttpClient`
+  roaster:
+  - Anthony
+- title: Customiser le rendu des formulaires
+  roaster:
+  - Raphaël
+  - Eduardo
 ---
 
 # Organisation des exposés
@@ -18,12 +52,4 @@ permalink: '/exposes'
 
 ## 📜 Sujets possibles
 
-1. Créer un `Validator` custom
-2. Créer un champ de formulaire `FormType` réutilisable
-3. Utilisation des « flash messages »
-4. Créer un `Voter` custom
-5. Créer une « commande » custom
-6. Valider le contenu d'un tableau avec l'`OptionsResolver`
-7. Convertir un tableau en objet avec le `Serializer`
-8. Effectuer un appel HTTP vers un service externe avec le `HttpClient`
-9. Customiser le rendu des formulaires
+{% include pages/presentations/_subjects.liquid subjects=page.subjects %}

@@ -1,0 +1,36 @@
+/*region    -- Presentations */
+.presentations-subjects {
+  > li {
+    .subject {
+      padding: $spacing-unit * .5 $spacing-unit * .25;
+      border-width: 2px;
+      border-style: solid;
+      border-color: $color-info;
+      display: flex;
+      justify-content: space-between;
+
+      &.has_roaster {
+        border-color: $brand-color;
+      }
+
+      > .title {
+        > p {
+          margin: unset;
+        }
+      }
+      > .roaster {
+        > span + span {
+          padding-left: $spacing-unit * .25;
+          border-left: 1px solid $brand-color;
+          margin-left: $spacing-unit * .25;
+        }
+      }
+    }
+
+    + li {
+      margin-top: $spacing-unit * .5;
+    }
+  }
+
+}
+/*endregion -- Presentations */
