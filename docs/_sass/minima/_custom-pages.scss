@@ -26,6 +26,20 @@
         }
       }
     }
+    .documentation {
+      margin-top: $spacing-unit * .25;
+      margin-left: $spacing-unit;
+
+      > a {
+        &:before {
+          font-size: larger;
+          content: "📚️";
+        }
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
 
     + li {
       margin-top: $spacing-unit * .5;
