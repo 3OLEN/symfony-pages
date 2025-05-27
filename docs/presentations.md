@@ -48,7 +48,7 @@ subjects:
   documentation: https://symfony.com/doc/current/form/form_themes.html
 ---
 
-# Organisation des exposés
+## Organisation des exposés
 
 * 📆 Date : Lundi 28 avril
 * ⏳️ Durée : 5 à 10mn
@@ -60,6 +60,6 @@ subjects:
   - D. Démo
   - E. Questions ?
 
-## 📜 Sujets possibles
+## 📜 Sujets
 
 {% include pages/presentations/_subjects.liquid subjects=page.subjects %}

@@ -37,7 +37,7 @@ symfony_elements:
   - label: Injection
 ---
 
-# Partiel symfony
+## Organisation
 
 * 📆 Date : Mardi 24 juin (8h - 12h)
 * 🗣️ Format : Entretien individuel
