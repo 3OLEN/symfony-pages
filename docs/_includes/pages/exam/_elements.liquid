@@ -1,0 +1,17 @@
+<section class="exam-elements">
+    {% for symfony_element in include.symfony_elements %}
+        <article>
+            <header>{{ symfony_element.title | markdownify }}</header>
+            <main>
+                <dl>
+                    {% for list_element in symfony_element.listing %}
+                        <dt>{{ list_element.label | markdownify }}</dt>
+                        {% if list_element.details %}
+                            <dd>{{ list_element.details | markdownify }}</dd>
+                        {% endif %}
+                    {% endfor %}
+                </dl>
+            </main>
+        </article>
+    {% endfor %}
+</section>

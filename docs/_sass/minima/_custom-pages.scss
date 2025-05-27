@@ -48,3 +48,47 @@
 
 }
 /*endregion -- Presentations */
+
+/*region    -- Exam */
+.exam-elements {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: $spacing-unit * 2;
+
+  > article {
+    border: 3px $border-color-01 solid;
+    border-radius: 1rem;
+
+    > header {
+      padding: $spacing-unit * .5;
+      font-weight: 700;
+      font-size: 1.25em;
+      text-align: center;
+
+      > p {
+        margin: unset;
+      }
+    }
+    > main {
+      border-top: 3px $border-color-01 solid;
+      padding-top: $spacing-unit * .25;
+
+      > dl {
+        > dt {
+          padding-left: $spacing-unit * .5;
+          padding-right: $spacing-unit * .5;
+        }
+        > dd {
+          padding-left: $spacing-unit;
+          padding-right: $spacing-unit;
+        }
+        > * + dt {
+          border-top: 1px $border-color-01 solid;
+          padding-top: $spacing-unit * .25;
+        }
+      }
+    }
+  }
+}
+/*endregion -- Exam */
